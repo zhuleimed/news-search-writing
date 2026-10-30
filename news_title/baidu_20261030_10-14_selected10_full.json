@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "source": "baidu_20261030_10-14_selected10.json",
+    "count": 10
+  },
+  "kept": [
+    {
+      "title": "养老金要崩盘？用三本账穿越认知迷雾",
+      "summary": "近期，部分自媒体渲染“养老金要崩盘”等论调制造焦虑。人民日报发文批驳，指出养老金是制度化的跨期保障。通过算“结构、公平、...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E5%85%BB%E8%80%81%E9%87%91%E8%A6%81%E5%B4%A9%E7%9B%98%EF%BC%9F%E7%94%A8%E4%B8%89%E6%9C%AC%E8%B4%A6%E7%A9%BF%E8%B6%8A%E8%AE%A4%E7%9F%A5%E8%BF%B7%E9%9B%BE&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 18,
+      "batch_index": 1,
+      "category": "finance",
+      "score": 9.3,
+      "selection_reason": "公共价值最高：直接关系每个家庭的养老预期，且“崩盘”说法已被人民日报批驳，有官方数据和“三本账”框架可撑起 1200～1500 字；配图可用官方图表，风险可控。"
+    },
+    {
+      "title": "法院认可微信聊天记录吗",
+      "summary": "近日，律师解读微信聊天记录作为证据使用需通过真实性、完整性、关联性及合法性四重审查，双方实名认证、记录完整连贯且有原始载...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E6%B3%95%E9%99%A2%E8%AE%A4%E5%8F%AF%E5%BE%AE%E4%BF%A1%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95%E5%90%97&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 23,
+      "batch_index": 2,
+      "category": "legal",
+      "score": 8.6,
+      "selection_reason": "高频法律需求：借钱、劳动纠纷、租房都可能用到微信记录，律师解读和判例资料充足；可写成“四重审查+实操清单”，实用性强、风险低。"
+    },
+    {
+      "title": "10元快剪正暴打全国的“设计总监”",
+      "summary": "近期，全国多地出现10元快剪排队潮，没有收银员，没有洗头台，没有推销办卡。反观传统理发店则因推销办卡等问题大量关停。此前...",
+      "baidu_url": "https://www.baidu.com/s?wd=10%E5%85%83%E5%BF%AB%E5%89%AA%E6%AD%A3%E6%9A%B4%E6%89%93%E5%85%A8%E5%9B%BD%E7%9A%84%E2%80%9C%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%9B%91%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 11,
+      "batch_index": 3,
+      "category": "consumer",
+      "score": 8.6,
+      "selection_reason": "消费降级与商业模式对比鲜明：10 元快剪排队、传统理发店关停，涉及就业和消费习惯；门店、价目表图片易得，分析角度清楚。"
+    },
+    {
+      "title": "谷歌重夺大模型第一 华尔街却不买账",
+      "summary": "谷歌发布Gemini 4 Carbon重夺大模型评测第一，同时交出云收入翻倍、月活破10亿的财报，却因巨额AI投入、自由...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E8%B0%B7%E6%AD%8C%E9%87%8D%E5%A4%BA%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%AC%AC%E4%B8%80+%E5%8D%8E%E5%B0%94%E8%A1%97%E5%8D%B4%E4%B8%8D%E4%B9%B0%E8%B4%A6&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 17,
+      "batch_index": 4,
+      "category": "tech",
+      "score": 8.6,
+      "selection_reason": "科技与财经交叉的好题：Gemini 4 Carbon 重夺评测第一，但华尔街担心 AI 投入拖累自由现金流，反差明显；财报数据、发布会图片充足。"
+    },
+    {
+      "title": "别把易怒多疑当“怪脾气”",
+      "summary": "进入秋季以来，不少老年人易怒多疑。医生解读称，此现象并非仅为“怪脾气”，而是光照变化、气温波动等季节因素，以及帕金森病、...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E5%88%AB%E6%8A%8A%E6%98%93%E6%80%92%E5%A4%9A%E7%96%91%E5%BD%93%E2%80%9C%E6%80%AA%E8%84%BE%E6%B0%94%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 19,
+      "batch_index": 5,
+      "category": "health",
+      "score": 8.5,
+      "selection_reason": "老龄化背景下的公共健康题：秋季易怒多疑可能是光照、气温变化，也可能是帕金森等疾病信号；医生解读提供专业框架，写作需坚持科普、不作诊断。"
+    },
+    {
+      "title": "西班牙高铁事故首份报告公布",
+      "summary": "当地时间10月29日，西班牙调查机构公布托莱多省高铁事故首份报告。报告估计相撞时速在160至200公里，指出信号系统故障...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E8%A5%BF%E7%8F%AD%E7%89%99%E9%AB%98%E9%93%81%E4%BA%8B%E6%95%85%E9%A6%96%E4%BB%BD%E6%8A%A5%E5%91%8A%E5%85%AC%E5%B8%83&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 35,
+      "batch_index": 6,
+      "category": "international",
+      "score": 8.3,
+      "selection_reason": "国际交通安全题：首份报告给出 160～200 公里时速、信号系统故障等关键信息，事实足够；与“华人女子赖床”同属一次事故，只保留报告这条，避免重复。"
+    },
+    {
+      "title": "11月起这些新规将影响生活",
+      "summary": "11月起，一批新规将正式施行，涉及社会民生多个领域，一起来了解。",
+      "baidu_url": "https://www.baidu.com/s?wd=11%E6%9C%88%E8%B5%B7%E8%BF%99%E4%BA%9B%E6%96%B0%E8%A7%84%E5%B0%86%E5%BD%B1%E5%93%8D%E7%94%9F%E6%B4%BB&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 24,
+      "batch_index": 7,
+      "category": "society",
+      "score": 8.1,
+      "selection_reason": "服务性最强：11 月新规涉及医保、出行、消费等日常事项，几乎影响所有人；需以官方发布逐条核实，适合做成“哪几条与你有关”的解读。"
+    },
+    {
+      "title": "“绕地球一圈”的香飘飘为啥卖不动了",
+      "summary": "近日，香飘飘发布三季度财报，归母净利润仅97.46万元，同比暴跌88.09%。受现制茶饮门店挤压及消费偏好变化影响，其主...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E2%80%9C%E7%BB%95%E5%9C%B0%E7%90%83%E4%B8%80%E5%9C%88%E2%80%9D%E7%9A%84%E9%A6%99%E9%A3%98%E9%A3%98%E4%B8%BA%E5%95%A5%E5%8D%96%E4%B8%8D%E5%8A%A8%E4%BA%86&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 30,
+      "batch_index": 8,
+      "category": "finance",
+      "score": 8.0,
+      "selection_reason": "数据硬、对比强：三季度归母净利润仅 97.46 万元、同比降 88.09%，适合讲现制茶饮冲击、品牌老化和渠道变化；财报、产品、门店图片易得。"
+    },
+    {
+      "title": "长斑的鸡蛋到底能不能吃",
+      "summary": "《生命时报》发文解读长斑鸡蛋能否食用。蛋壳分散小褐点为色素沉积，不能吃；半透明水印状斑点因新鲜度下降，尽快吃；蛋黄红点或...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E9%95%BF%E6%96%91%E7%9A%84%E9%B8%A1%E8%9B%8B%E5%88%B0%E5%BA%95%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 6,
+      "batch_index": 9,
+      "category": "health",
+      "score": 8.4,
+      "selection_reason": "家家户户都会遇到的食品安全问题：蛋壳斑点、水印、蛋黄红点各有不同成因，生命时报已给出分类；科普价值高、配图容易，需避免绝对化结论。"
+    },
+    {
+      "title": "“张雪机车”商标终于归“张雪”了",
+      "summary": "10月29日，重庆知识产权局披露“ZXMOTO”等核心商标完成注册，权利人为重庆张雪机车工业有限公司。此前张雪于2024...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E2%80%9C%E5%BC%A0%E9%9B%AA%E6%9C%BA%E8%BD%A6%E2%80%9D%E5%95%86%E6%A0%87%E7%BB%88%E4%BA%8E%E5%BD%92%E2%80%9C%E5%BC%A0%E9%9B%AA%E2%80%9D%E4%BA%86&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 3,
+      "batch_index": 10,
+      "category": "business",
+      "score": 8.0,
+      "selection_reason": "知识产权保护的典型案例：核心商标回归创始人，故事性强、榜单排名第 3；可讲创业品牌为何要提前布局商标，只陈述已披露的注册和纠纷事实。"
+    }
+  ]
+}

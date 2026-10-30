@@ -18,3 +18,7 @@ backup/
 scenarios/
 .DS_Store
 *.docx
+
+# 新闻解读流水线：图片和备份目录不入库（docx 内已嵌图，备份留在本地）
+news_papers/*/images*/
+news_papers/*/_v*/

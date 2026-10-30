@@ -1,0 +1,35 @@
+{
+  "rank": 17,
+  "images": [
+    {
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_carbon_102726_header.width-1200.format-webp.webp",
+      "caption": "谷歌官方发布的 Gemini 4 Carbon 模型主视觉图",
+      "source_page": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "source_name": "Google 官方博客"
+    },
+    {
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon__evals-table.width-1200.format-webp.webp",
+      "caption": "谷歌官方公布的 Gemini 4 Carbon 基准测试成绩表",
+      "source_page": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "source_name": "Google 官方博客"
+    },
+    {
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_secbench-pro.width-1200.format-webp.webp",
+      "caption": "谷歌官方公布的 SEC-bench Pro 漏洞发现测试成绩图",
+      "source_page": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "source_name": "Google 官方博客"
+    },
+    {
+      "url": "https://img.ithome.com/newsuploadfiles/2026/10/6970034e-3aa7-4f43-bdf6-ed2c0cb64c04.png",
+      "caption": "IT之家报道中的 Gemini 4 Carbon 模型示意图",
+      "source_page": "https://www.ithome.com/1/019/240.htm",
+      "source_name": "IT之家"
+    },
+    {
+      "url": "https://img.jiemian.com/101/original/20261029/179325473618107700.png",
+      "caption": "界面新闻相关报道配图（资料图）",
+      "source_page": "https://www.jiemian.com/article/15263404.html",
+      "source_name": "界面新闻"
+    }
+  ]
+}
