@@ -1,6 +1,6 @@
 # 百度热榜新闻解读 · 加工操作指南
 
-**版本**：2026-10-30 最终版（v3，带选题评审、配图、docx、定时任务）
+**版本**：2026-10-30 最终版（v3，带选题评审、配图、docx、定时任务）；2026-10-31 修订：补充 cron 认证环境（4.7 / 11.10 坑 9）
 **适用场景**：每天从百度热榜抓取前 50 条，过滤涉政/股市实时行情，按标准选出 10 条，写成 1200～1500 字、3～5 张图、头条风格的 Word 文章。
 **目的**：照着这份指南，可以从零复现今天的工作，也可以每天自动运行。
 
@@ -232,6 +232,9 @@ timeout 90 /home/zhulei/.npm-global/bin/claude -p "只回答两个字：正常" 
 实测返回“正常”。会看到一行 `[claude-code:unrecognized_model]` 警告，
 这是当前 deepseek 模型名不被 CLI 识别导致的提示，**不影响运行**。
 
+> **注意**：这个测试如果在交互式 shell 里跑，会继承 `ANTHROPIC_*` 变量，不能证明 cron 能跑；
+> 真正的 cron 认证测试必须用 4.7 的 `env -i` 空环境。
+
 ## 4.4 网络限制
 
 - Claude Code 自带的 **WebFetch 在本机被安全策略拦截**，打不开中文新闻网站；
@@ -271,6 +274,66 @@ crontab 里已有：
 ```
 
 `daily_news_cron.sh` 会预检 `deepseek_proxy.py` 是否在运行；没运行时会尝试拉起。
+
+## 4.7 cron 认证环境（2026-10-31 补充）
+
+**现象**：2026-10-31 05:00 的 cron 确实启动了（日志 `news_20261031_0500.log`），
+但 3 秒后 exit=1，日志只有：
+
+```
+Not logged in · Please run /login
+```
+
+**原因**：交互式 Claude Code 依赖环境变量 `ANTHROPIC_AUTH_TOKEN` 和
+`ANTHROPIC_BASE_URL`（本机是 `http://127.0.0.1:8848` 的 deepseek 代理）。
+cron 不会继承登录 shell 的这些变量，所以 `claude` 认为未登录。
+
+**解决**：
+
+- 认证变量写到仓库外、权限 600 的文件：
+  `/home/zhulei/.config/news_search_writing/claude_env.sh`
+- `daily_news_cron.sh` 启动时 source 该文件，并检查
+  `ANTHROPIC_AUTH_TOKEN`/`ANTHROPIC_BASE_URL` 是否存在。
+- 生成方法（在交互式 Claude Code 会话里执行，不打印密钥）：
+
+```bash
+python - <<'PY'
+import os, shlex
+keys = [
+    "ANTHROPIC_AUTH_TOKEN", "ANTHROPIC_BASE_URL",
+    "ANTHROPIC_MODEL", "ANTHROPIC_DEFAULT_SONNET_MODEL",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL", "ANTHROPIC_DEFAULT_HAIKU_MODEL",
+    "CLAUDE_CODE_SUBAGENT_MODEL",
+]
+d = "/home/zhulei/.config/news_search_writing"
+os.makedirs(d, mode=0o700, exist_ok=True)
+os.chmod(d, 0o700)
+lines = ["# Claude Code auth for cron"]
+for k in keys:
+    v = os.environ.get(k)
+    if v:
+        lines.append(f"export {k}={shlex.quote(v)}")
+p = os.path.join(d, "claude_env.sh")
+open(p, "w", encoding="utf-8").write("\n".join(lines) + "\n")
+os.chmod(p, 0o600)
+print("written", p, [k for k in keys if os.environ.get(k)])
+PY
+```
+
+- 验证（模拟 cron 空环境，必须这样做）：
+
+```bash
+env -i HOME=/home/zhulei \
+  PATH=/home/zhulei/anaconda3/bin:/home/zhulei/.npm-global/bin:/usr/local/bin:/usr/bin:/bin \
+  LANG=C.UTF-8 bash -c '
+    source /home/zhulei/.config/news_search_writing/claude_env.sh
+    timeout 90 /home/zhulei/.npm-global/bin/claude -p "只回答两个字：正常" --dangerously-skip-permissions
+  '
+```
+
+返回“正常”才算通过；`[claude-code:unrecognized_model]` 警告不影响运行。
+
+- token 更新/换机器后重新生成；该文件**不要提交到 git**。
 
 ---
 
@@ -1019,6 +1082,12 @@ ls -t logs/cron/news_*.log | head -1
   - **处理**：不影响运行；实测返回正常；日志里保留即可。
 - **坑 8：crontab 覆盖其他任务**：
   - **处理**：先 `crontab -l > backup`，再追加，再 `crontab`。
+- **坑 9：cron 里 `Not logged in · Please run /login`**：
+  - **现象**：cron 5:00 启动了，但 3 秒退出，exit=1，日志只有这一行；
+  - **原因**：cron 不继承登录 shell 的 `ANTHROPIC_AUTH_TOKEN`/`ANTHROPIC_BASE_URL`；
+  - **处理**：source 仓库外的 `~/.config/news_search_writing/claude_env.sh`（600 权限）；见 4.7；
+  - **以后**：`claude -p` 测试必须在 `env -i` 空环境里做，不能在交互式 shell 里做——
+    交互式 shell 的变量会掩盖问题。
 
 ## 11.11 敏感题材
 
@@ -1076,6 +1145,8 @@ ls -t logs/cron/news_*.log | head -1
 | 质检 FAIL：声明缺失 | 用了旧长声明/漏写 | 统一短声明 |
 | cron 没跑 | crontab 没装/PATH/代理/权限 | 看 `crontab -l`、`logs/cron/last_status.txt`、最新日志 |
 | cron 跑了但失败 | 代理没起来/模型异常 | 看日志；手动 `DRY_RUN=1`/`bash daily_news_cron.sh` |
+| cron 日志 `Not logged in · Please run /login`，exit=1 | cron 没有认证环境变量 | 重新生成并 source `/home/zhulei/.config/news_search_writing/claude_env.sh`；见 4.7 |
+| cron 5:00 有日志但 3 秒退出 | 认证失败/脚本预检失败 | 看日志最后一行；先做空环境 `claude -p` 测试（见 4.7） |
 | 模型名警告 | deepseek 模型名不被 CLI 识别 | 不影响；确认输出正常 |
 | 任务重叠 | 上一次没结束 | `flock` 会自动跳过；看日志 |
 | 目录很乱 | 旧批次没归档 | 移入 `_v1_long/`/`_v2_first10/` |
@@ -1089,6 +1160,8 @@ ls -t logs/cron/news_*.log | head -1
 - [ ] 进入项目目录；
 - [ ] 检查 Python 依赖（requests/bs4/lxml/docx/PIL）；
 - [ ] 检查 claude CLI 可用；
+- [ ] 生成并检查 `/home/zhulei/.config/news_search_writing/claude_env.sh`（600 权限，含 token/base_url）；
+- [ ] 用 `env -i` 空环境测试 `claude -p` 返回“正常”；
 - [ ] 检查 `crontab`/`flock`/`timeout`；
 - [ ] 抓前 50 条：`collect_hot50.py --limit 50`；
 - [ ] 过滤全部：`filter_topics.py`（不加 `--limit`）；
@@ -1104,6 +1177,7 @@ ls -t logs/cron/news_*.log | head -1
 - [ ] 归档旧批次；
 - [ ] 检查 cron 干跑；
 - [ ] 检查 `logs/cron/last_status.txt`；
+- [ ] 检查 cron 日志不是 `Not logged in`；
 - [ ] 确认最终 10 篇全部 PASS。
 
 **预期结果**：
@@ -1135,6 +1209,11 @@ cat news_papers/$(date +%Y%m%d)/_index.md
 2. 10 篇是否 PASS；
 3. 有没有被备选替换的条目。
 
+如果退出码是 1，先看日志最后一行：
+
+- 如果是 `Not logged in · Please run /login` → 看 14.6，重新生成认证环境；
+- 其他 → 按第 12 节故障排查表处理。
+
 ## 14.2 暂停定时任务
 
 ```bash
@@ -1165,6 +1244,8 @@ bash daily_news_cron.sh
 DRY_RUN=1 bash daily_news_cron.sh
 ```
 
+如果日志里出现 `Not logged in`，先检查 14.6 的认证文件，再做 4.7 的空环境测试。
+
 ## 14.5 备份
 
 ```bash
@@ -1173,6 +1254,25 @@ cp -r news_papers/$(date +%Y%m%d) news_papers/$(date +%Y%m%d)_backup
 
 # 备份 crontab
 crontab -l > /tmp/crontab_backup_$(date +%Y%m%d_%H%M%S).txt
+```
+
+## 14.6 认证环境维护
+
+cron 用仓库外的认证文件：
+
+```
+/home/zhulei/.config/news_search_writing/claude_env.sh
+```
+
+- 权限必须是 600；
+- 文件在仓库外，**不要提交 git**；
+- token 更新/换机器后，按 4.7 的 Python 片段重新生成；
+- 生成后必须做 4.7 的 `env -i` 空环境测试，返回“正常”才算通过。
+
+查看权限：
+
+```bash
+ls -l /home/zhulei/.config/news_search_writing/claude_env.sh
 ```
 
 ---

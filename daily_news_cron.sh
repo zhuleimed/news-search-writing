@@ -24,6 +24,23 @@ export PATH="/home/zhulei/anaconda3/bin:/home/zhulei/.npm-global/bin:/usr/local/
 export HOME="/home/zhulei"
 export LANG="C.UTF-8"
 
+# 认证环境：cron 不会继承交互式登录 shell 的 ANTHROPIC_AUTH_TOKEN。
+# 这个文件在仓库之外、权限 600，不能提交到 git。
+CLAUDE_ENV_FILE="/home/zhulei/.config/news_search_writing/claude_env.sh"
+if [ ! -f "$CLAUDE_ENV_FILE" ]; then
+    echo "错误：缺少认证环境文件 $CLAUDE_ENV_FILE"
+    echo "请在有登录环境的终端重新生成（见 NEWS_WORKFLOW_OPERATIONS_GUIDE.md 第 11.10 节）"
+    exit 1
+fi
+# shellcheck disable=SC1090
+. "$CLAUDE_ENV_FILE"
+
+if [ -z "${ANTHROPIC_AUTH_TOKEN:-}" ] || [ -z "${ANTHROPIC_BASE_URL:-}" ]; then
+    echo "错误：认证变量未设置（ANTHROPIC_AUTH_TOKEN/ANTHROPIC_BASE_URL）"
+    exit 1
+fi
+echo "认证环境：已加载（base_url=${ANTHROPIC_BASE_URL}）"
+
 # 预检 1：claude 必须存在
 if [ ! -x "$CLAUDE_BIN" ]; then
     echo "错误：找不到可执行的 claude：$CLAUDE_BIN"
@@ -64,6 +81,20 @@ PROMPT='读取并严格执行 /public/home/hpc/zhulei/superman/quant/code/news_s
 if [ "${DRY_RUN:-0}" = "1" ]; then
     echo "[DRY_RUN] 将要执行："
     echo "$CLAUDE_BIN -p \"$PROMPT\" --dangerously-skip-permissions"
+    exit 0
+fi
+
+# ---------- 预检 3：认证是否真的可用 ----------
+echo "claude 认证预检..."
+if ! timeout 60 "$CLAUDE_BIN" -p "只回答两个字：正常" --dangerously-skip-permissions >/tmp/news_claude_preflight.log 2>&1; then
+    echo "错误：claude 认证预检失败，见 /tmp/news_claude_preflight.log"
+    tail -5 /tmp/news_claude_preflight.log
+    exit 1
+fi
+echo "claude 认证预检：通过"
+
+if [ "${PREFLIGHT_ONLY:-0}" = "1" ]; then
+    echo "[PREFLIGHT_ONLY] 认证预检通过，退出。"
     exit 0
 fi
 

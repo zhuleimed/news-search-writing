@@ -28,7 +28,10 @@
 - 防止重叠：`flock`；
 - 最长运行：3 小时（`timeout 10800`）；
 - 干跑测试：`DRY_RUN=1 bash daily_news_cron.sh`；
-- 预检：`claude` 是否存在、`deepseek_proxy.py` 是否在运行。
+- 预检：`claude` 是否存在、`deepseek_proxy.py` 是否在运行、认证变量是否已加载；
+- 认证：cron 不继承登录 shell 的 `ANTHROPIC_AUTH_TOKEN`；脚本会 source
+  `/home/zhulei/.config/news_search_writing/claude_env.sh`（仓库外，600 权限）。
+  如果日志出现 `Not logged in`，按 `NEWS_WORKFLOW_OPERATIONS_GUIDE.md` 4.7 重新生成。
 
 ## 一条命令复用
 
