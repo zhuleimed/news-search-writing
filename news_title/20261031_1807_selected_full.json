@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "worklist": "baidu_20261031_18-07_50.json",
+    "selection": "20261031_1807_selected.json",
+    "count": 10,
+    "backups": 5
+  },
+  "kept": [
+    {
+      "title": "卖650万捐赠房产要缴450万的税",
+      "summary": "目前，上海徐汇区一对无儿无女的老夫妇遗赠房产与积蓄救助先心病患儿遇阻。老人离世后，基金会在处置房产变现时却遇高额税费。一...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E5%8D%96650%E4%B8%87%E6%8D%90%E8%B5%A0%E6%88%BF%E4%BA%A7%E8%A6%81%E7%BC%B4450%E4%B8%87%E7%9A%84%E7%A8%8E&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 2,
+      "batch_index": 1,
+      "category": "finance",
+      "score": 9.3,
+      "selection_reason": "涉及公益捐赠、遗产处置与税费制度，直接关系普通人做慈善的成本预期；事件事实链清楚，多家媒体已报道；可用房产、捐赠协议、税务资料等配图，公共价值最高。"
+    },
+    {
+      "title": "官方披露：将有两名中国人登陆月球",
+      "summary": "10月31日，第七届载人航天学术大会在北京举行，王翔披露我国计划2030年前实现首次载人登月，乘组由三人组成，两人着陆月...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E5%AE%98%E6%96%B9%E6%8A%AB%E9%9C%B2%EF%BC%9A%E5%B0%86%E6%9C%89%E4%B8%A4%E5%90%8D%E4%B8%AD%E5%9B%BD%E4%BA%BA%E7%99%BB%E9%99%86%E6%9C%88%E7%90%83&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 3,
+      "batch_index": 2,
+      "category": "tech",
+      "score": 9.0,
+      "selection_reason": "载人登月是国家科技里程碑，官方在载人航天学术大会上披露，来源权威；公众关注度高，航天器、训练、发射场等图片资源充足。"
+    },
+    {
+      "title": "金饰克价年内暴跌近550元",
+      "summary": "受美国通胀及美联储加息预期影响，国际金价跌至一年来新低。纽商所黄金期货跌3.29%。受此波及，国内金饰价格大幅回落，周生...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E9%87%91%E9%A5%B0%E5%85%8B%E4%BB%B7%E5%B9%B4%E5%86%85%E6%9A%B4%E8%B7%8C%E8%BF%91550%E5%85%83&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 6,
+      "batch_index": 3,
+      "category": "finance",
+      "score": 8.8,
+      "selection_reason": "金价波动直接关系居民消费、婚嫁刚需与黄金投资；国际金价、品牌金店报价等数据可核对；与 rank 14 为同一事件，按去重规则只选本条。"
+    },
+    {
+      "title": "“存钱不如存肌肉”的时代来了",
+      "summary": "近日，“存钱不如存肌肉”走红，越来越多中老年女性为缓解肌肉流失及病痛，闯入健身房进行抗阻训练。年轻人开始操心父母肌肉量，...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E2%80%9C%E5%AD%98%E9%92%B1%E4%B8%8D%E5%A6%82%E5%AD%98%E8%82%8C%E8%82%89%E2%80%9D%E7%9A%84%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 19,
+      "batch_index": 4,
+      "category": "health",
+      "score": 8.6,
+      "selection_reason": "肌少症与老年健康是覆盖面极广的公共健康议题；有中老年抗阻训练、社区健身、医院康复等多元素材；角度正面、风险低。"
+    },
+    {
+      "title": "主持人跑网约车被抽成破防",
+      "summary": "近日，杭州交通918主持人于洋实测跑网约车被抽成破防，其连续在线12小时共接9单，总流水139元，但叠加租车及充电等成本...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E4%B8%BB%E6%8C%81%E4%BA%BA%E8%B7%91%E7%BD%91%E7%BA%A6%E8%BD%A6%E8%A2%AB%E6%8A%BD%E6%88%90%E7%A0%B4%E9%98%B2&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 24,
+      "batch_index": 5,
+      "category": "society",
+      "score": 8.7,
+      "selection_reason": "网约车抽成、司机实际收入是平台经济中的高频劳动议题；有连续在线12小时、9单、流水139元等实测数据；可讨论平台分配与从业者保障。"
+    },
+    {
+      "title": "小升初还有近1年 六年级家长已坐不住",
+      "summary": "近日，距离明年小升初还有近一年，杭州六年级家长群已热闹起来。面对是否提前学初中知识、摇号选择及青春期亲子沟通，家长们普遍...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E5%B0%8F%E5%8D%87%E5%88%9D%E8%BF%98%E6%9C%89%E8%BF%911%E5%B9%B4+%E5%85%AD%E5%B9%B4%E7%BA%A7%E5%AE%B6%E9%95%BF%E5%B7%B2%E5%9D%90%E4%B8%8D%E4%BD%8F&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 25,
+      "batch_index": 6,
+      "category": "education",
+      "score": 8.5,
+      "selection_reason": "教育焦虑覆盖大量家庭；可结合提前学、摇号政策、青春期亲子沟通等角度；杭州本地报道提供了具体案例，资料可继续补充。"
+    },
+    {
+      "title": "未经培训人员不得独立从事陪诊服务",
+      "summary": "2026年11月1日，我国陪诊服务领域首项国家标准《社会化陪同就医服务基本要求》将正式实施。标准规定，陪诊服务人员须经专...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E6%9C%AA%E7%BB%8F%E5%9F%B9%E8%AE%AD%E4%BA%BA%E5%91%98%E4%B8%8D%E5%BE%97%E7%8B%AC%E7%AB%8B%E4%BB%8E%E4%BA%8B%E9%99%AA%E8%AF%8A%E6%9C%8D%E5%8A%A1&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 26,
+      "batch_index": 7,
+      "category": "health",
+      "score": 8.6,
+      "selection_reason": "陪诊服务首项国家标准于11月1日实施，关系老年人就医与新兴职业规范；政策文本明确、事实清楚；可写行业影响与消费者选择。"
+    },
+    {
+      "title": "全国“村BA”收官 冠军奖一头牛",
+      "summary": "10月29日晚，全国“村BA”总决赛收官。冠军队伍获得一头牛，亚军和季军分别获得黑猪与山羊，第四至第八名队伍获得咸丰农特...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E5%85%A8%E5%9B%BD%E2%80%9C%E6%9D%91BA%E2%80%9D%E6%94%B6%E5%AE%98+%E5%86%A0%E5%86%9B%E5%A5%96%E4%B8%80%E5%A4%B4%E7%89%9B&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 36,
+      "batch_index": 8,
+      "category": "sports",
+      "score": 8.2,
+      "selection_reason": "乡村体育与农文旅融合的正向议题；赛事现场、颁奖、农产品奖品等图片丰富；补足文体领域，风险低。"
+    },
+    {
+      "title": "长期睡不安稳的人中风风险显著上升",
+      "summary": "近日一项最新研究发现，长期睡眠不安稳不仅影响精神，更会扰乱血压节律、损伤心血管。2026年10月《BMC公共卫生》刊发的...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E9%95%BF%E6%9C%9F%E7%9D%A1%E4%B8%8D%E5%AE%89%E7%A8%B3%E7%9A%84%E4%BA%BA%E4%B8%AD%E9%A3%8E%E9%A3%8E%E9%99%A9%E6%98%BE%E8%91%97%E4%B8%8A%E5%8D%87&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 43,
+      "batch_index": 9,
+      "category": "health",
+      "score": 8.4,
+      "selection_reason": "睡眠与心脑血管健康关系多数人；有《BMC公共卫生》研究可核实；适合做科普与风险提示，需注意区分研究结论与个体诊疗建议。"
+    },
+    {
+      "title": "环保博主遭村支书死亡威胁 当地通报",
+      "summary": "10月31日，陆良县三岔河镇党委通报，因威胁环保博主，免去涉事人员马某某村支书职务，村委会主任职务处理已启动。此前，环保...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E7%8E%AF%E4%BF%9D%E5%8D%9A%E4%B8%BB%E9%81%AD%E6%9D%91%E6%94%AF%E4%B9%A6%E6%AD%BB%E4%BA%A1%E5%A8%81%E8%83%81+%E5%BD%93%E5%9C%B0%E9%80%9A%E6%8A%A5&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 48,
+      "batch_index": 10,
+      "category": "law",
+      "score": 8.4,
+      "selection_reason": "涉及基层治理、环境监督与举报人保护，公共价值高；有当地党委通报这一权威来源；写作需克制，聚焦制度与处理结果，不渲染威胁细节。"
+    }
+  ]
+}
