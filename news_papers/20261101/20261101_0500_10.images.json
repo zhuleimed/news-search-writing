@@ -1,0 +1,35 @@
+{
+  "rank": 10,
+  "images": [
+    {
+      "url": "https://oss.zhidx.com/b8de52b280e321f8817d91af9a4e4dac/6ae52f80/uploads/2026/10/6ae5fb2278c3a_6ae5fb2275c2c_6ae5fb2275bfc_640-3.jpeg",
+      "caption": "《Super-agent设计探索》一文中的双层架构示意图（资料图）",
+      "source_page": "https://www.zhidx.com/p/606311.html",
+      "source_name": "智东西"
+    },
+    {
+      "url": "https://oss.zhidx.com/da075a5b9388de0327678c895442c37f/6ae52f80/uploads/2026/10/6ae5fb2112f64_6ae5fb21101af_6ae5fb2110178_640-1.jpeg",
+      "caption": "《Super-agent设计探索》一文中的流程图（资料图）",
+      "source_page": "https://www.zhidx.com/p/606311.html",
+      "source_name": "智东西"
+    },
+    {
+      "url": "https://img.ithome.com/newsuploadfiles/2026/10/0a2e0db3-13b7-4ee2-a54c-3ac7e6ce3d2b.jpg",
+      "caption": "DeepSeek Harness团队技术文章配图（资料图）",
+      "source_page": "https://m.ithome.com/html/1020615.htm",
+      "source_name": "IT之家"
+    },
+    {
+      "url": "https://img.ithome.com/newsuploadfiles/2026/10/65c20720-3877-4377-b042-c97a464a4458.jpg",
+      "caption": "Super-agent架构设计相关示意图（资料图）",
+      "source_page": "https://m.ithome.com/html/1020615.htm",
+      "source_name": "IT之家"
+    },
+    {
+      "url": "https://img.ithome.com/newsuploadfiles/2026/10/a9b0cf37-f417-40ac-a7de-514437c51ac3.jpg",
+      "caption": "技术文章中关于任务分派的示意图（资料图）",
+      "source_page": "https://m.ithome.com/html/1020615.htm",
+      "source_name": "IT之家"
+    }
+  ]
+}

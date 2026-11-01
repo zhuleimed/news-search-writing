@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "worklist": "baidu_20261101_05-00_50.json",
+    "selection": "baidu_20261101_05-00_selected.json",
+    "count": 10,
+    "backups": 5
+  },
+  "kept": [
+    {
+      "title": "央视曝光：2388元的蜜丸检出镇痛药",
+      "summary": "一款号称专治腰腿疼痛的白芷蝮蛇丸，标注为方便食品，售价高达2388元一罐。央视曝光，该产品违规添加元胡，其天然含镇痛药罗...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E5%A4%AE%E8%A7%86%E6%9B%9D%E5%85%89%EF%BC%9A2388%E5%85%83%E7%9A%84%E8%9C%9C%E4%B8%B8%E6%A3%80%E5%87%BA%E9%95%87%E7%97%9B%E8%8D%AF&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 2,
+      "batch_index": 1,
+      "category": "health",
+      "score": 9.1,
+      "selection_reason": "公共价值最高：高价“方便食品”违规添加镇痛药，直接关系中老年人用药安全与虚假宣传治理；央视原始报道事实充分，配图可得；适合从产品定性、监管边界、消费者识别三个层面展开。"
+    },
+    {
+      "title": "“毛孩子”的饭碗没那么好端了",
+      "summary": "10月30日，六家宠物食品上市公司三季报出炉。第三季度其营收合计约52.28亿元，归母净利润合计约1.47亿元，同比下降...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E2%80%9C%E6%AF%9B%E5%AD%A9%E5%AD%90%E2%80%9D%E7%9A%84%E9%A5%AD%E7%A2%97%E6%B2%A1%E9%82%A3%E4%B9%88%E5%A5%BD%E7%AB%AF%E4%BA%86&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 3,
+      "batch_index": 2,
+      "category": "finance",
+      "score": 8.5,
+      "selection_reason": "六家宠物食品上市公司三季报数据清楚，能写出宠物经济从高速扩张转向成本竞争的行业拐点；涉及大量养宠家庭，兼具财经与消费视角，配图可用财报、生产线、宠物门店资料图。"
+    },
+    {
+      "title": "卖650万捐赠房产要缴450万的税",
+      "summary": "目前，上海徐汇区一对无儿无女的老夫妇遗赠房产与积蓄救助先心病患儿遇阻。老人离世后，基金会在处置房产变现时却遇高额税费。一...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E5%8D%96650%E4%B8%87%E6%8D%90%E8%B5%A0%E6%88%BF%E4%BA%A7%E8%A6%81%E7%BC%B4450%E4%B8%87%E7%9A%84%E7%A8%8E&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 9,
+      "batch_index": 3,
+      "category": "finance",
+      "score": 8.7,
+      "selection_reason": "无儿无女老人遗赠房产救助先心病患儿却卡在税费环节，兼具公益、财税、法治三重价值；事件有明确当事方与官方回应，可讨论慈善捐赠税收制度如何落地，公共价值高且不涉敏感。"
+    },
+    {
+      "title": "首部AI电影成本千万周票房不到150万",
+      "summary": "首部AI院线电影《三星堆：未来往事》自10月23日上映一周票房仅149.5万元。因成片效果被指粗糙，出品方博纳影业股价曾...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E9%A6%96%E9%83%A8AI%E7%94%B5%E5%BD%B1%E6%88%90%E6%9C%AC%E5%8D%83%E4%B8%87%E5%91%A8%E7%A5%A8%E6%88%BF%E4%B8%8D%E5%88%B0150%E4%B8%87&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 14,
+      "batch_index": 4,
+      "category": "tech",
+      "score": 8.3,
+      "selection_reason": "首部AI院线电影的票房与口碑形成鲜明反差，可讨论AI降本增效的边界、观众为何不买账、影视工业流程哪些环节无法被替代；票房与成本数字明确，行业分析角度清晰。"
+    },
+    {
+      "title": "多地密集开始放秋假",
+      "summary": "越来越多地方推行中小学春秋假。其中，山东多个城市下周开始放休假。部分地区秋假时间为11月4—6日，一部分地区秋假时间为1...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E5%A4%9A%E5%9C%B0%E5%AF%86%E9%9B%86%E5%BC%80%E5%A7%8B%E6%94%BE%E7%A7%8B%E5%81%87&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 24,
+      "batch_index": 5,
+      "category": "education",
+      "score": 8.9,
+      "selection_reason": "中小学春秋假从政策倡导走向多地落地，直接影响学生、家长、学校和文旅消费；涉及带薪休假衔接、看护难题、城乡差异等真实矛盾，公共价值高，官方信息充足，容易配图。"
+    },
+    {
+      "title": "胃癌之王印戒细胞癌专盯年轻人",
+      "summary": "胃印戒细胞癌被称为“胃癌之王”，是胃癌中的一种特殊类型。其早期症状酷似普通胃炎，且胃镜下无明显肿块易漏诊。该癌症偏爱中青...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E8%83%83%E7%99%8C%E4%B9%8B%E7%8E%8B%E5%8D%B0%E6%88%92%E7%BB%86%E8%83%9E%E7%99%8C%E4%B8%93%E7%9B%AF%E5%B9%B4%E8%BD%BB%E4%BA%BA&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 25,
+      "batch_index": 6,
+      "category": "health",
+      "score": 8.8,
+      "selection_reason": "健康科普类高价值选题：早期症状像胃炎、胃镜下易漏诊，直接关系年轻人筛查意识；可写发病特点、检查手段、生活方式风险，用权威医院与专家口径，避免制造恐慌即可。"
+    },
+    {
+      "title": "全网戒不掉的红果怕“捧杀”",
+      "summary": "10月26日，传媒人秦朔发文称中国互联网进入“字节时间”，指红果短剧日活1.68亿、人均单日观看125分钟成“杀时间大王...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E5%85%A8%E7%BD%91%E6%88%92%E4%B8%8D%E6%8E%89%E7%9A%84%E7%BA%A2%E6%9E%9C%E6%80%95%E2%80%9C%E6%8D%A7%E6%9D%80%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 27,
+      "batch_index": 7,
+      "category": "tech",
+      "score": 8.4,
+      "selection_reason": "红果短剧日活1.68亿、人均单日观看125分钟，是观察注意力经济与内容平台治理的典型样本；秦朔等业内人士已有公开分析，可写平台增长、内容质量、监管与行业生态，资料较足。"
+    },
+    {
+      "title": "留学生陷骗局 不敢说话只写小纸条",
+      "summary": "上海留学生小张在境外遭遇冒充公检法诈骗，被骗子恐吓后惶恐不安，回国后举止怪异，只靠小纸条和家人交流。父母察觉异常求助警方...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E7%95%99%E5%AD%A6%E7%94%9F%E9%99%B7%E9%AA%97%E5%B1%80+%E4%B8%8D%E6%95%A2%E8%AF%B4%E8%AF%9D%E5%8F%AA%E5%86%99%E5%B0%8F%E7%BA%B8%E6%9D%A1&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 43,
+      "batch_index": 8,
+      "category": "society",
+      "score": 8.5,
+      "selection_reason": "冒充公检法诈骗导致留学生严重心理创伤，案例具体、警示意义强；可从诈骗话术、跨境执法协作、家庭沟通、心理援助多角度写，公共价值高，注意不披露当事人可识别信息。"
+    },
+    {
+      "title": "长江中游最大江心洲告别“千年孤岛”",
+      "summary": "10月31日，枝江长江大桥通过交工验收即将通车，长江中游最大江心洲百里洲近10万居民将告别千百年轮渡出行的“孤岛”生活，...",
+      "baidu_url": "https://www.baidu.com/s?wd=%E9%95%BF%E6%B1%9F%E4%B8%AD%E6%B8%B8%E6%9C%80%E5%A4%A7%E6%B1%9F%E5%BF%83%E6%B4%B2%E5%91%8A%E5%88%AB%E2%80%9C%E5%8D%83%E5%B9%B4%E5%AD%A4%E5%B2%9B%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 44,
+      "batch_index": 9,
+      "category": "society",
+      "score": 8.5,
+      "selection_reason": "枝江长江大桥通车让百里洲近10万居民结束轮渡出行，是基础设施改善民生的正面样本；可写交通、产业、公共服务与生态保护，官方信息与现场图片充足，风险低。"
+    },
+    {
+      "title": "DeepSeek重磅发布：AI开始指挥AI干活",
+      "summary": "近日，DeepSeek Harness团队发文介绍Super-agent架构。该架构由Router统筹和Worker执行...",
+      "baidu_url": "https://www.baidu.com/s?wd=DeepSeek%E9%87%8D%E7%A3%85%E5%8F%91%E5%B8%83%EF%BC%9AAI%E5%BC%80%E5%A7%8B%E6%8C%87%E6%8C%A5AI%E5%B9%B2%E6%B4%BB&sa=fyb_news&rsv_dl=fyb_news",
+      "rank": 10,
+      "batch_index": 10,
+      "category": "tech",
+      "score": 8.6,
+      "selection_reason": "DeepSeek发布Super-agent架构，Router统筹、Worker执行，代表AI应用从单模型走向多智能体协作；行业影响大、可写性强，可与办公、软件开发、企业自动化结合，注意区分官方发布与推测。"
+    }
+  ]
+}

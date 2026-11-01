@@ -1,0 +1,20 @@
+{
+  "rank": 10,
+  "sources": [
+    {
+      "title": "重磅，DeepSeek发布全新Agent架构：Super-agent",
+      "media": "新浪财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-10-31/doc-inixcwwk1422483.shtml"
+    },
+    {
+      "title": "DeepSeek又开源了！公布Super agent架构",
+      "media": "智东西",
+      "url": "https://www.zhidx.com/p/606311.html"
+    },
+    {
+      "title": "DeepSeek 提出 Super-agent 架构设计：Router 与 Worker 双层架构，探索更自主的 Agent 系统",
+      "media": "IT之家",
+      "url": "https://m.ithome.com/html/1020615.htm"
+    }
+  ]
+}
